@@ -1,6 +1,6 @@
 # Common Lisp / Lisp / LISP / CL / clisp /crisp...
 
-    whatever it is you're doing would be done better in LispLanguage. Why? Don't ask, they can't explain it to the rest of us. 
+> whatever it is you're doing would be done better in LispLanguage. Why? Don't ask, they can't explain it to the rest of us. 
 
 I'm re-learning clisp after being away from it since the early 90's. If you know what alife or strange attractors are, you'll instictively get what I was up to. To add something to the community, I'll be pointing out a lot of the Gotcha's... especially where security is involved. Eventually this will culminate in a couple of projects I have in mind that are very LISPy in nature. Including one I started back then, but seemingly only now is of technical interest.
 
