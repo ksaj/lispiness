@@ -12,6 +12,8 @@ Everything is executed as a script. For example:  clisp 1.lisp
 
 But read the code first. Truly. Yeesh.
 
+> Once you get over the ugly parts, you can get actual work done -- even with Common Lisp.
+
 I'll add stuff here that I think is good for learning the Lisp language, but not stuff that you find repeated everywhere else. That's just repetitive and boring. And repetative. I don't know why there are [500 "tutorials" with exactly the same content](http://wiki.c2.com/?SmugLispWeenie), yet so little genuinely usable Lisp content out there that didn't originate from black-and-white television days. Shameful really. It's like learning one song on violin just so you can teach that violin song while preaching the violin's many sonic wonders, yet never actually getting around to presenting any functional knowledge and skill outside of blatantly echoing the previous 499 people who also only know that song. It doesn't make for a very compelling argument for Lisp's utility at all. No wonder people keep tuning out whenever you mention violin. Have I mentioned how repetitive this mentality is?
 
 That's enough of my bitching. Use this in combination with whatever tutorial you choose to learn from, as a way to learn genuinely useable code without making the same mistakes that have propogated this know-it-all history of "hackers" pretending they understand how powerful the language is, yet seemingly unable to get outside their regurgitation skills. And <i>Bloody L</i> don't write yet another copy of that same "tutorial" unless you actually <i>add</i> something that isn't in the 499 other "tutorials" you are aping!
