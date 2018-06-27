@@ -2,7 +2,7 @@
 
 > whatever it is you're doing would be done better in LispLanguage. Why? Don't ask, they can't explain it to the rest of us. 
 
-I'm re-learning clisp after being away from it since the early 90's. If you know what alife or strange attractors are, you'll instictively get what I was up to. To add something to the community, I'll be pointing out a lot of the Gotcha's... especially where security is involved. Eventually this will culminate in a couple of projects I have in mind that are very LISPy in nature. Including one I started back then, but seemingly only now is of technical interest.
+I'm re-learning clisp after being away from it since the early 90's. If you know what alife or strange attractors are, you'll instictively get what I was up to while surrounded by robots and other electronic ittybits. To add something to the community, I'll be pointing out a lot of the Gotcha's... especially where security is involved. Eventually this will culminate in a couple of projects I have in mind that are very LISPy in nature. Including one I started back then, but seemingly only now is of technical interest.
 
 I interchange all the terms in the title, even if it pisses off certain overly-bespectacled nerds who talk some of the talk, but walk little of the walk. If you are at a point where different flavours matter, you still should be able to fully grok everything I ever write on the subject. Leave the religious naming crap for reddit. You won't appeal to my interests on that level.
 
