@@ -20,4 +20,4 @@ That's enough of my bitching. Use this in combination with whatever tutorial you
 Asks your name, then gives a friendly hello. Documents a bizarrely wide-spread Lisp coding flaw that can really mess up your day. I'll revisit this issue later, since my usual fix is probably superceded by something way more slick these days. Here you can see an example of how to exploit it in 90% of the tutorials out there (mainly because they are all passively reworded copies).
 
 # 
-#### PS: I am almost nearly kidding with my rant. Lisp is surely a great language. But so far, everyone seems stuck at Eliza and the ubiquitous tutorial. Desperately sad.
+#### PS: I am almost nearly kidding with my rant. Lisp is surely a great language. But so far, everyone seems stuck at Eliza and the ubiquitous tutorial. I'm just as sardonic about the state of Lisp in the world as every other cynical Lisper out there. Entertain me...
