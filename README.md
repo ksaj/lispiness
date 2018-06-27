@@ -13,5 +13,5 @@ I'll add stuff here that I think is good for learning the Lisp language, but not
 
 That's enough of my bitching. This isn't yet another tutorial. Hopefully as it grows, it'll be more useful than that. This is really just a reposistory of the code I write as I relearn this great language, minus the crap that has already been said a brazillion times already. Use this in combination with whatever tutorial you choose to learn from, as a way to learning how to create genuinely useable code.
 
-## 1.lisp
+## [1.lisp](https://github.com/ksaj/clisp/blob/master/1.lisp)
 Asks your name, then gives a friendly hello. Documents a bizarrely wide-spread Lisp coding flaw that can really mess up your day. I'll revisit this issue later, since my usual fix is probably superceded by something way more slick these days. But here you can see an example of how to exploit it.
