@@ -1,4 +1,4 @@
-# Common Lisp / Lisp / LISP / CL / clisp /crisp...
+# Common Lisp / Lisp / LISP / CL / clisp / (◔_◔) 
 
 > whatever it is you're doing would be done better in LispLanguage. Why? Don't ask, they can't explain it to the rest of us. 
 
