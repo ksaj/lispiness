@@ -20,4 +20,4 @@ That's enough of my bitching. This isn't yet another nauseatingly familiar tutor
 Asks your name, then gives a friendly hello. Documents a bizarrely wide-spread Lisp coding flaw that can really mess up your day. I'll revisit this issue later, since my usual fix is probably superceded by something way more slick these days. Here you can see an example of how to exploit it in 90% of the tutorials out there (mainly because they are all passively reworded copies).
 
 # 
-#### PS: I am almost nearly kidding with my rant. Lisp is a great language. But so far, nobody has been able to prove it.
+#### PS: I am almost nearly kidding with my rant. Lisp is a great language. But so far, nobody since the 60's has been able to prove it.
