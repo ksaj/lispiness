@@ -18,6 +18,10 @@ I'll add stuff here that I think is good for learning the Lisp language, but not
 
 That's enough of my bitching. Use this in combination with whatever tutorial you choose to learn from, as a way to learn genuinely useable code without making the same mistakes that have propogated this know-it-all history of "hackers" pretending they understand how powerful the language is, yet seemingly unable to get outside their regurgitation skills. And <i>Bloody L</i> don't write yet another copy of that same "tutorial" unless you actually <i>add</i> something that isn't in the 499 other "tutorials" you are aping!
 
+# Best resource Evah!
+
+June 30, 2018: I finally found a resource worth learning from. [Practical Common Lisp](http://gigamonkeys.com/book/index.html). Still am going to post snippets that contain common gotchas. Then I'll add the appropriate methods.
+
 ## [1.lisp](https://github.com/ksaj/clisp/blob/master/1.lisp)
 Asks your name, then gives a friendly hello. Documents a bizarrely wide-spread Lisp coding flaw that can really mess up your day. I'll revisit this issue later, since my usual fix is probably superceded by something way more slick these days. Here you can see an example of how to exploit it in 90% of the tutorials out there (mainly because they are all passively reworded copies).
 
