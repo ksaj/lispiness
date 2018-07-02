@@ -25,5 +25,8 @@ June 30, 2018: I finally found a resource worth learning from. [Practical Common
 ## [1.lisp](https://github.com/ksaj/clisp/blob/master/1.lisp)
 Asks your name, then gives a friendly hello. Documents a bizarrely wide-spread Lisp coding flaw that can really mess up your day. I'll revisit this issue later, since my usual fix is probably superceded by something way more slick these days. Here you can see an example of how to exploit it in 90% of the tutorials out there (mainly because they are all passively reworded copies).
 
+## [formatnil.md](https://github.com/ksaj/clisp/blob/master/formatnil.md)
+Ever thought about (format nil "string")? I did, and had a lisp epiphany. Lispiphany?
+
 # 
 #### PS: I am almost nearly kidding with my rant. Lisp is surely a great language. But so far, everyone seems stuck at Eliza and the ubiquitous tutorial. I'm just as sardonic about the state of Lisp in the world as every other cynical Lisper out there. Entertain me...
