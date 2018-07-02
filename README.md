@@ -24,11 +24,11 @@ June 30, 2018: I finally found a resource worth learning from. [Practical Common
 
 July 2, 2018: Just finished chapter 3 (out of 33). It took 2 long days. Still learned more than I already knew, and covered more than any of the tutorials I've seen out there. My brain is melting. I'm going to have to redo and expand on my formatnil.md, because even after a Lispiphany, this chapter has pointed out how much more about even that one command I have yet to grok.
 
+# The Filez
+
 ## [1.lisp](https://github.com/ksaj/clisp/blob/master/1.lisp)
 Asks your name, then gives a friendly hello. Documents a bizarrely wide-spread Lisp coding flaw that can really mess up your day. I'll revisit this issue later, since my usual fix is probably superceded by something way more slick these days. Here you can see an example of how to exploit it in 90% of the tutorials out there (mainly because they are all passively reworded copies).
 
 ## [formatnil.md](https://github.com/ksaj/clisp/blob/master/formatnil.md)
 Ever thought about (format nil "string")? I did, and had a lisp epiphany. Lispiphany? EDIT July 2, 2018 - I just discovered my initial thoughts were probably right, and some of the tutorials lead you astray on this subject. I'll be looking into this specifically, and updating it with the facts.
 
-# 
-#### PS: I am almost nearly kidding with my rant. Lisp is surely a great language. But so far, everyone seems stuck at Eliza and the ubiquitous tutorial. I'm just as sardonic about the state of Lisp in the world as every other cynical Lisper out there. Entertain me...
