@@ -25,7 +25,7 @@ I shouldn't poopoo on other people's efforts without concrete examples. One of t
 ```lisp
     (write(+ (* (/ 9 5) 60) 32))
 ```
-What makes that an example of misleading amateurish crap? It appears to new Lispers that it works until you try to convert less convenient temperatures like 61 degrees. The answer is a rather stupid looking 709/5. This is NOT "code for converting Fahrenheit temp of 60o F to the centigrade scale" no matter how you slice it. If they were aiming for simplicity, they should use a simpler example. Teaching bad code right at the start only leads to equally bad programmers. The author spent far too much time finding a number to convert that is cleanly divisible by 5. Quite misleading...
+What makes that an example of misleading amateurish crap? It appears to new Lispers that it works until you try to convert less convenient temperatures like 61 degrees. The answer is a rather stupid looking 709/5. This is NOT "code for converting Fahrenheit temp of 60o F to the centigrade scale" no matter how you slice it. If they were aiming for simplicity, they should use a simpler example. Teaching bad code right at the start only leads to equally bad programmers. The author spent far too much time finding a number to convert that would produce clean output. No human thinks of temperature in terms of its divisibility by 5, so why use it as your example?
 
 There are a lot of ways to do this. But to avoid ugly inhuman /5 answers, you could just as easily do this:
     
@@ -33,7 +33,7 @@ There are a lot of ways to do this. But to avoid ugly inhuman /5 answers, you co
     (format t "~d" (ceiling (+ (* 1.8 61) 32)))
 ```
 
-That still might not be optimal in the professional sense, but it is basic and produces human-friendly output. (Also, why does everyone seem so attached to (/ 9 5) when it reolves to a simple, clean 1.8 anyway? Is there a *practical* use for /5 temperature notation?)
+That still might not be optimal in the professional sense, but it is basic and produces human-friendly output. (Also, why does everyone seem so attached to (/ 9 5) when it resolves to a simple, clean 1.8 anyway? Is there a *practical* use for /5 temperature notation?)
 
 On another page, the author says:
 
