@@ -39,7 +39,7 @@ On another page, the author says:
 
     LISP represents a function call f(x) as (f x), for example cos(45) is written as cos 45
     
-If we were to even attempt at being consistent, then in order to be correct it should say:
+The author literally forgot the segment is about how parens are used, producing examples that don't even work. Try this and the example will work as the reader should expect:
 
     LISP represents a function call f(x) as (f x). For example, cos(45) is written as (cos 45).
 
