@@ -14,7 +14,7 @@ But read the code first. That's the whole idea.
 
 > Once you get over the ugly parts, you can get actual work done -- even with Common Lisp.
 
-I'll add stuff here that I think is good for learning the Lisp language, but not stuff that you find repeated everywhere else. That's just repetitive and boring. And repetative. I've scanned a LOT of the so-called tutorials out there, and moved on because it is clear you could fully understand the content, yet be utterly inept at writing something useful that works - the antithesis of what Lisp offers.
+I'll add stuff here that I think is good for learning the Lisp language, but not stuff that you find repeated everywhere else. That's just repetitive and boring. And repetative. I've scanned a LOT of the so-called tutorials out there, and moved on because it is clear you could fully understand the content, yet be utterly inept at writing something useful that works - the antithesis to what Lisp has to offer.
 
 Don't expect anything practical here. It's just a few of the non-intuitive things I find, but seem to be missing from the tutorials and courses out there. Some of it is probably dead wrong. But that is part of learning, and of course I'll update and explain the bits I got wrong, too.
 
