@@ -10,7 +10,7 @@ This is all pure Common Lisp, and I simply use clisp on my Raspberry Pi. It will
 
 Everything is executed as a script. For example:  clisp 1.lisp
 
-But read the code first.
+But read the code first. That's the whole idea.
 
 > Once you get over the ugly parts, you can get actual work done -- even with Common Lisp.
 
@@ -60,4 +60,7 @@ Asks your name, then gives a friendly hello. Documents a bizarrely wide-spread L
 
 ## [formatnil.md](https://github.com/ksaj/clisp/blob/master/formatnil.md)
 Ever thought about (format nil "string")? I did, and had a lisp epiphany. Lispiphany? EDIT July 2, 2018 - I just discovered my initial thoughts were probably right, and some of the tutorials lead you astray on this subject. I'll be looking into this specifically, and updating it with the facts.
+
+## equal-or-thereabouts.lisp
+All things being greater than or equal. Coming soon. 
 
