@@ -33,7 +33,7 @@ There are a lot of ways to do this. But to avoid ugly inhuman /5 answers, you co
     (format t "~d" (ceiling (+ (* 1.8 61) 32)))
 ```
 
-That still might not be optimal in the professional sense, but it is basic and produces usable output. (Also, why does everyone seem so attached to (/ 9 5) when it reolves to a simple, clean 1.8 anyway? Is there a *practical* use for /5 temperature notation?)
+That still might not be optimal in the professional sense, but it is basic and produces human-friendly output. (Also, why does everyone seem so attached to (/ 9 5) when it reolves to a simple, clean 1.8 anyway? Is there a *practical* use for /5 temperature notation?)
 
 On another page, the author says:
 
