@@ -27,7 +27,7 @@ I shouldn't poopoo on other people's efforts without concrete examples. One of t
 ```
 Why is that an example of misleading amateurish crap? It appears legit until you try to convert less convenient temperatures like 61 degrees. The answer is a rather stupid looking 709/5. This is NOT "code for converting Fahrenheit temp of 60o F to the centigrade scale" no matter how you slice it. If they were aiming for simplicity, they should use a simpler example. Teaching bad code right at the start only leads to equally bad programmers.
 
-Really, if you can't even get that simple of an example right, you should *NOT* be writing a tutorial. Besides, there already are a million tutorials out there. If lisp is such a great language, why is 90% of the code out there derivative, or just plain terrible? If you are going to evangelize, plagiarized and just plain shit code isn't the way to do it.
+Really, if you can't even get that simple of an example right, you should *NOT* be writing a tutorial. Besides, there already are a million tutorials out there. If lisp is such a great language, why is 90% of the code out there derivative, or just plain terrible? If you are going to evangelize, try not to make it look so clumsy and ineffective.
 
 
 # Best resource Evah!
