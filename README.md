@@ -20,7 +20,7 @@ Don't expect anything practical here. It's just a few of the non-intuitive thing
 
 # Crappy Resources
 
-I shouldn't poopoo on other people's efforts without concrete examples. One of the worst "tutorials" I have seen yet is at (https://www.tutorialspoint.com/lisp/lisp_program_structure.htm)[Tutorials Point]. On the linked page, you get an executable example of how to convert Farenheit to Celsius. The code given is: 
+I shouldn't poopoo on other people's efforts without concrete examples. One of the worst "tutorials" I have seen yet is at [Tutorials Point](https://www.tutorialspoint.com/lisp/lisp_program_structure.htm). On the linked page, you get an executable example of how to convert Farenheit to Celsius. The code given is: 
 
 ```lisp
     (write(+ (* (/ 9 5) 60) 32))
