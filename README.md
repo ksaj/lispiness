@@ -10,7 +10,7 @@ This is all pure Common Lisp, and I simply use clisp on my Raspberry Pi. It will
 
 Everything is executed as a script. For example:  clisp 1.lisp
 
-But read the code first. Truly. Yeesh.
+But read the code first.
 
 > Once you get over the ugly parts, you can get actual work done -- even with Common Lisp.
 
