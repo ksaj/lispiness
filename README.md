@@ -18,11 +18,21 @@ I'll add stuff here that I think is good for learning the Lisp language, but not
 
 Don't expect anything practical here. It's just a few of the non-intuitive things I find, but seem to be missing from the tutorials and courses out there. Some of it is probably dead wrong.
 
+# Crappy Resources
+
+I shouldn't poopoo on other people's efforts without concrete examples. One of the worst "tutorials" I have seen yet is at (https://www.tutorialspoint.com/lisp/lisp_program_structure.htm)[Tutorials Point]. On the linked page, you get an executable example of how to convert Farenheit to Celsius. The code given is: 
+
+```lisp
+    (write(+ (* (/ 9 5) 60) 32))
+```
+Why is that an example of misleading amateurish crap? It appears legit until you try to convert less convenient temperatures like 61 degrees. The answer is a rather stupid looking 709/5. This is NOT "code for converting Fahrenheit temp of 60o F to the centigrade scale" no matter how you slice it. If you were aiming for simplicity, use a simpler example. Bad code is the wrong way to start learning.
+
+Really, if you can't even get that simple of an example right, you should *NOT* be writing a tutorial. Besides, there already are a million tutorials out there. we don't need yet another crappy one.
+
+
 # Best resource Evah!
 
 June 30, 2018: I finally found a resource worth learning from. [Practical Common Lisp](http://gigamonkeys.com/book/index.html). Still am going to post snippets that contain common gotchas. Then I'll add the appropriate methods.
-
-July 2, 2018: Just finished chapter 3 (out of 33). It took 2 long days. Still learned more than I already knew, and covered more than any of the tutorials I've seen out there. My brain is melting. I'm going to have to redo and expand on my formatnil.md, because even after a Lispiphany, this chapter has pointed out how much more about even that one command I have yet to grok.
 
 # The Filez
 
