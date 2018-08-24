@@ -35,7 +35,15 @@ There are a lot of ways to do this. But to avoid ugly inhuman /5 answers, you co
 
 That still might not be optimal in the professional sense, but it is basic and produces usable output. (Also, why does everyone seem so attached to (/ 9 5) when it reolves to a simple, clean 1.8 anyway? Is there a *practical* use for /5 temperature notation?)
 
-Really, if you can't even get that simple of an example right, you should *NOT* be writing a tutorial. Besides, there already are a million tutorials out there. If lisp is such a great language, why is 90% of the code out there derivative, or just plain terrible? If you are going to evangelize, try not to make it look so clumsy and ineffective.
+On another page, the author says:
+
+    LISP represents a function call f(x) as (f x), for example cos(45) is written as cos 45
+    
+If we were to even attempt at being consistent, then in order to be correct it should say:
+
+    LISP represents a function call f(x) as (f x). For example, cos(45) is written as (cos 45).
+
+Really, if you can't even get these simple examples (as well as English punctuation and basic sentence structure) right, you should *NOT* be writing a tutorial. Besides, there already are a million tutorials out there. If lisp is such a great language, why is 90% of the code out there derivative, or just plain terrible? If you are going to evangelize, try not to make it look so clumsy and ineffective.
 
 
 # Best resource Evah!
