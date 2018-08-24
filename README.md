@@ -62,5 +62,5 @@ Asks your name, then gives a friendly hello. Documents a bizarrely wide-spread L
 Ever thought about (format nil "string")? I did, and had a lisp epiphany. Lispiphany? EDIT July 2, 2018 - I just discovered my initial thoughts were probably right, and some of the tutorials lead you astray on this subject. I'll be looking into this specifically, and updating it with the facts.
 
 ## equal-or-thereabouts.lisp
-All things being greater than or equal. Coming soon. 
+All things being greater than or equal. Fun with (in)equality. *Coming soon*. 
 
