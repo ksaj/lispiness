@@ -42,6 +42,8 @@ On another page, the author says:
 The author literally forgot the segment is about how parens are used, producing examples that don't even work. Try this and the example will work as the reader should expect:
 
     * LISP represents a function call f(x) as (f x). For example, cos(45) is written as (cos 45).
+    
+It would be easy to go on and on about how crappy the Tutorials Point Lisp tutorial is - is NILL *really* a data type? - but you probably already haveheard enough to avoid the site entirely.
 
 Really, if you can't even get these simple examples (as well as English punctuation and basic sentence structure) right, you should *NOT* be writing a tutorial. Besides, there already are a million tutorials freely available online. If lisp is such a great language, why is 90% of the code out there derivative, or just plain terrible? If you are going to evangelize, try not to make it look so clumsy and ineffective. This "tutorial" adds nothing (but confusion) to the world.
 
