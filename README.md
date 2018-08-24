@@ -25,7 +25,7 @@ I shouldn't poopoo on other people's efforts without concrete examples. One of t
 ```lisp
     (write(+ (* (/ 9 5) 60) 32))
 ```
-Why is that an example of misleading amateurish crap? It appears legit until you try to convert less convenient temperatures like 61 degrees. The answer is a rather stupid looking 709/5. This is NOT "code for converting Fahrenheit temp of 60o F to the centigrade scale" no matter how you slice it. If they were aiming for simplicity, they should use a simpler example. Teaching bad code right at the start only leads to equally bad programmers.
+What makes that an example of misleading amateurish crap? It appears to new Lispers that it works until you try to convert less convenient temperatures like 61 degrees. The answer is a rather stupid looking 709/5. This is NOT "code for converting Fahrenheit temp of 60o F to the centigrade scale" no matter how you slice it. If they were aiming for simplicity, they should use a simpler example. Teaching bad code right at the start only leads to equally bad programmers. The author spent far too much time finding a number to convert that is cleanly divisible by 5. Quite misleading...
 
 There are a lot of ways to do this. But to avoid ugly inhuman /5 answers, you could just as easily do this:
     
