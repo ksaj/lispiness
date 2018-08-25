@@ -64,3 +64,7 @@ Ever thought about (format nil "string")? I did, and had a lisp epiphany. Lispip
 ## equal-or-thereabouts.lisp
 All things being greater than or equal. Fun with (in)equality. *Coming soon*. 
 
+## [ksaj-sudoku.lisp](https://github.com/ksaj/clisp/blob/master/ksaj-sudoku.lisp)
+Soon-to-be parrallel Sudoku Solver. Using different methods than everyone else so I can't cheat.
+
+
