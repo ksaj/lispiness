@@ -11,9 +11,10 @@ TODO:	- Subject to change on a whim
 -----
 DONE	- Set up grid and initial (test-grid) 
 DONE	- Improve the listp tests 
-	- (reset-grid) - zero out the matrix
+DONE	- Start (info)
+	- (reset-grid) - blank out the grid
 	- (print-game) - output in standard game format
-	- (test-game) - populate board w/ a build-in solvable game
+	- (test-game) - populate board w/ a built-in solvable game
 	- (load-game '<filename>) 
 	- (solve-game) 
 	- Loop count to abort when stuck in puzzle we can't solve
@@ -49,16 +50,27 @@ DONE	- Improve the listp tests
     (setf (aref sudoku-grid 0 4) '())
     (print (aref sudoku-grid 0 4))
     (terpri)
-    (print sudoku-grid)
-    (format t "~%~%listp tests:~%")
-    (format t "3 Pass if NIL: ~a~%" (listp (aref sudoku-grid 0 0)))	; 3 should be  NIL 
-    (format t "\(0 1 3\) Pass if T: ~a~%"(listp (aref sudoku-grid 0 1)))		; (0 1 3) should be T   
-    (format t "0 Pass if NIL: ~a~%" (listp (aref sudoku-grid 0 2)))	; 0 should be NIL 
-    (format t "\(4\) Pass if T: ~a~%" (listp (aref sudoku-grid 0 3)))		; (4) should be T
-    (format t "\(\) Pass if T: ~a~%" (listp (aref sudoku-grid 0 4)))		; () should be T
-    )	; On separate line to facilitate additions
+    (print sudoku-grid)				; View the test grid
+    (format t "~%~%listp tests:~%")		; Make sure we can detect candidate list vs. solved cell
+    (format t "3 Pass if NIL: ~a~%" (listp (aref sudoku-grid 0 0)))
+    (format t "\(0 1 3\) Pass if T: ~a~%"(listp (aref sudoku-grid 0 1)))
+    (format t "0 Pass if NIL: ~a~%" (listp (aref sudoku-grid 0 2)))
+    (format t "\(4\) Pass if T: ~a~%" (listp (aref sudoku-grid 0 3)))
+    (format t "\(\) Pass if T: ~a~%" (listp (aref sudoku-grid 0 4)))
+    )						; On separate line to facilitate additions
 
-(test-grid)				; DEBUG
+(defun info ()
+    "Help Screen"
+    (format t "~%Karsten Johansson's Sudoku Solver  v0.1~%")
+    (format t "---------------------------------------~%~%")
+    (format t "Nothing here yet.~%~%")
+    t)
+
+;;;
+;;; Begins...
+;;;
+
+; (test-grid)					; Here for quick testing on startup. 
 
 
 
