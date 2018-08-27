@@ -14,5 +14,5 @@ Probably should expand this as per http://www.lispworks.com/documentation/HyperS
    (1- 5/3)
 ```
 
-which results in 2/3.
+which results in 2/3. And *that* is quite mysterious to me atm... 1+ results in 8/3, btw.
 
