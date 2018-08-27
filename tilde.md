@@ -8,3 +8,5 @@
 
 * ~: ignore whitespace
 
+Probably should expand this as per http://www.lispworks.com/documentation/HyperSpec/Front/X_Mast_9.htm
+
