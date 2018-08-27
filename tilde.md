@@ -8,5 +8,11 @@
 
 * ~: ignore whitespace
 
-Probably should expand this as per http://www.lispworks.com/documentation/HyperSpec/Front/X_Mast_9.htm
+Probably should expand this as per http://www.lispworks.com/documentation/HyperSpec/Front/X_Mast_9.htm for thigs like this:
+
+```lisp
+   (1- 5/3)
+```
+
+which results in 2/3.
 
