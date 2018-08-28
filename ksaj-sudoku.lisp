@@ -21,9 +21,7 @@ DONE	- Start (info)
 	- MPI
 |#
 
-(setq sudoku-grid (make-array '(9 9)))
-
-(defun test-grid ()
+(defun test-grid ()				; Delete funtion and (info) reference when no longer needed.
     "Call (test-grid) to run some tests from REPL. Remove from v1.0."
     (format t "~%Set up cell tests:~%")
     (setf (aref sudoku-grid 0 0) 3)		; This is what a solved cell looks like
@@ -32,7 +30,7 @@ DONE	- Start (info)
     (print (aref sudoku-grid 0 1))
     (setf (aref sudoku-grid 0 2) 0)		; This case shouldn't ever happen, but we should be
     (print (aref sudoku-grid 0 2))		;   able to handle it without croaking
-    (setf (aref sudoku-grid 0 3) '(4)) 		; This case as well... 
+    (setf (aref sudoku-grid 0 3) '(4)) 		; A partly olved cell with only one candidate 
     (print (aref sudoku-grid 0 3))
     (setf (aref sudoku-grid 0 4) '())		; Nil is the default, so that sure better work well
     (print (aref sudoku-grid 0 4))
@@ -44,19 +42,63 @@ DONE	- Start (info)
     (format t "\(0 1 3\) Pass if T: ~a~%"(listp (aref sudoku-grid 0 1)))	; we can't...
     (format t "0 Pass if NIL: ~a~%" (listp (aref sudoku-grid 0 2)))
     (format t "\(4\) Pass if T: ~a~%" (listp (aref sudoku-grid 0 3)))
-    (format t "\(\) Pass if T: ~a~%" (listp (aref sudoku-grid 0 4)))
+    (format t "\(\) Pass if T: ~a~%" (listp (aref sudoku-grid 0 4)))		; NIL is a list, but
+    (format t "\(\) Pass if NIL: ~a~%" (consp (aref sudoku-grid 0 4)))		; NIL is not a cons
+    (reset-grid)				; clean up
     (terpri))					; Keep as last line for close paren
 
 (defun info ()
     "Help Screen"
     (format t "~%Karsten Johansson's Sudoku Solver  v0.1~%")
     (format t "---------------------------------------~%~%")
-    (format t "Nothing here yet.~%~%")
+    (format t "(reset-grid)	- Blank game grid~%")
+    (format t "(test-grid)	- Run some tests~%")	; Will be deleted when no longer needed
+    (format t "(test-game)	- Populate with sample game~%")
+    (format t "(load-game)	- Not yet...~%")
+    (format t "(solve-game)	- One can only hope and dream...~%")
+    (format t "(print-game)	- Not yet...~%")
+    (format t "sudoku-grid	- Display the current game grid~%~%")
     t)
 
+(defun reset-grid ()
+    "Create a blank sudoku grid with all cells set to NIL"
+    (setq sudoku-grid (make-array '(9 9))))
+
 (defun test-game ()
-    "Populate grid with test game"
-    (print "Coming next...")
+    "Populate grid with test game"	; Ugly as sin. Turn into a loop...
+    (setf (aref sudoku-grid 0 1) 7)
+    (setf (aref sudoku-grid 0 3) 3)
+    (setf (aref sudoku-grid 0 5) 6)
+    (setf (aref sudoku-grid 0 7) 9)
+    (setf (aref sudoku-grid 1 0) 8)
+    (setf (aref sudoku-grid 1 4) 4)
+    (setf (aref sudoku-grid 1 8) 7)
+    (setf (aref sudoku-grid 2 0) 5)
+    (setf (aref sudoku-grid 2 1) 1)
+    (setf (aref sudoku-grid 2 7) 2)
+    (setf (aref sudoku-grid 2 8) 4)
+    (setf (aref sudoku-grid 3 0) 4)
+    (setf (aref sudoku-grid 3 3) 8)
+    (setf (aref sudoku-grid 3 5) 3)
+    (setf (aref sudoku-grid 3 8) 2)
+    (setf (aref sudoku-grid 4 1) 3)
+    (setf (aref sudoku-grid 4 4) 2)
+    (setf (aref sudoku-grid 4 7) 5)
+    (setf (aref sudoku-grid 5 0) 9)
+    (setf (aref sudoku-grid 5 3) 6)
+    (setf (aref sudoku-grid 5 5) 5)
+    (setf (aref sudoku-grid 5 8) 3)
+    (setf (aref sudoku-grid 6 0) 1)
+    (setf (aref sudoku-grid 6 1) 5)
+    (setf (aref sudoku-grid 6 7) 3)
+    (setf (aref sudoku-grid 6 8) 9)
+    (setf (aref sudoku-grid 7 0) 3)
+    (setf (aref sudoku-grid 7 4) 9)
+    (setf (aref sudoku-grid 7 8) 6)
+    (setf (aref sudoku-grid 8 1) 2)
+    (setf (aref sudoku-grid 8 3) 4)
+    (setf (aref sudoku-grid 8 5) 8)
+    (setf (aref sudoku-grid 8 7) 7)
     t)
 
 ;; Solve Strategies
@@ -100,6 +142,8 @@ DONE	- Start (info)
 ;;;
 ;;; The Action Begins...
 ;;;
+
+(reset-grid)			; Start with a blank grid
 
 sudoku-grid
 
