@@ -1,6 +1,7 @@
 #|
 
-This will be about EQU, EQUAL, EQUALP, =, string=, etc, the variant gt and lt constructs, as well as pluralization just 'cos it relates in a linguistic sense.
+This will be about EQU, EQUAL, EQUALP, =, string=, etc, the variant gt and lt constructs, 
+as well as pluralization just 'cos it relates in a linguistic sense.
 
 eg:
 
