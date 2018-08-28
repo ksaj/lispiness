@@ -9,5 +9,12 @@ eg:
 (format nil "~D tr~:@P/~D win~:P" 1 0)
 (format nil "~D tr~:@P/~D win~:P" 1 3)
 
+[11]> (/ 4.0)
+0.25
+[12]> (/ 4)
+1/4
+[13]> 
+
+
 |#
 
