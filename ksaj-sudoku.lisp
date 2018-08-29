@@ -11,7 +11,7 @@ TODO:	- Subject to change on a whim
 -----
 DONE	- Set up grid and initial (test-grid) 
 DONE	- Start (info)
-	- (test-game) - populate board w/ a built-in solvable game
+COMING	- (test-game) - populate board w/ a built-in solvable game
 	- (print-game) - output in standard game format
 	- (load-game '<filename>) 
 	- (solve-game) 
@@ -21,7 +21,7 @@ DONE	- Start (info)
 	- MPI
 |#
 
-(defun test-grid ()				; Delete funtion and (info) reference when no longer needed.
+(defun test-grid ()				; Delete function and (info) reference when no longer needed.
     "Call (test-grid) to run some tests from REPL. Remove from v1.0."
     (format t "~%Set up cell tests:~%")
     (setf (aref sudoku-grid 0 0) 3)		; This is what a solved cell looks like
@@ -30,7 +30,7 @@ DONE	- Start (info)
     (print (aref sudoku-grid 0 1))
     (setf (aref sudoku-grid 0 2) 0)		; This case shouldn't ever happen, but we should be
     (print (aref sudoku-grid 0 2))		;   able to handle it without croaking
-    (setf (aref sudoku-grid 0 3) '(4)) 		; A partly olved cell with only one candidate 
+    (setf (aref sudoku-grid 0 3) '(4)) 		; A partly solved cell with only one candidate 
     (print (aref sudoku-grid 0 3))
     (setf (aref sudoku-grid 0 4) '())		; Nil is the default, so that sure better work well
     (print (aref sudoku-grid 0 4))
@@ -51,27 +51,28 @@ DONE	- Start (info)
     "Help Screen"
     (format t "~%Karsten Johansson's Sudoku Solver  v0.1~%")
     (format t "---------------------------------------~%~%")
-    (format t "(reset-grid)	- Blank game grid~%")
-    (format t "(test-grid)	- Run some tests~%")	; Will be deleted when no longer needed
-    (format t "(test-game)	- Populate with sample game~%")
-    (format t "(load-game)	- Not yet...~%")
-    (format t "(solve-game)	- One can only hope and dream...~%")
-    (format t "(print-game)	- Not yet...~%")
-    (format t "sudoku-grid	- Display the current game grid~%~%")
+    (format t "(reset-grid)		- Blank game grid~%")
+    (format t "(test-grid)		- Run some tests~%")	; Will be deleted when no longer needed
+    (format t "(test-easy-game)		- Populate with sample easy game~%")
+    (format t "(test-hard-game)		- Populate with sample hard game (Not yet...)~%")
+    (format t "(load-game)		- Not yet...~%")
+    (format t "(solve-game)		- One can only hope and dream...~%")
+    (format t "(print-game)		- Not yet...~%")
+    (format t "sudoku-grid		- Display the current game grid~%~%")
     t)
 
 (defun reset-grid ()
     "Create a blank sudoku grid with all cells set to NIL"
     (setq sudoku-grid (make-array '(9 9))))
 
-(defun test-game ()
-    "Populate grid with test game"	; Ugly as sin. Turn into a loop...
+(defun test-easy-game ()
+    "Populate grid with an easy test game"	; Ugly as sin. Turn into a loop, mapcar, or whatevs
     (setf (aref sudoku-grid 0 1) 7)
     (setf (aref sudoku-grid 0 3) 3)
     (setf (aref sudoku-grid 0 5) 6)
     (setf (aref sudoku-grid 0 7) 9)
     (setf (aref sudoku-grid 1 0) 8)
-    (setf (aref sudoku-grid 1 4) 4)
+    (setf (aref sudoku-grid 1 4) 4)		; Conceptis for Star Metro Toronto, Aug 27 2018.
     (setf (aref sudoku-grid 1 8) 7)
     (setf (aref sudoku-grid 2 0) 5)
     (setf (aref sudoku-grid 2 1) 1)
@@ -100,6 +101,16 @@ DONE	- Start (info)
     (setf (aref sudoku-grid 8 5) 8)
     (setf (aref sudoku-grid 8 7) 7)
     t)
+
+(defun test-hard-game ()			; Test for hard solve functions
+    "Populate grid with a hard test game"
+   ;((0 1 2) (1 3 6) (1 8 3) (2 1 7) (2 2 4) (2 4 8)		; (ROW COL NUM)
+   ; (3 5 2) (3 8 2) (4 1 8) (4 4 4) (4 7 1) (5 0 6) (5 3 5)	; Hard sample from
+   ; (6 4 1) (6 6 7) (6 7 8) (7 0 5) (7 5 9) (8 7 4))		; "A SAT-based Sudoku Solver"
+								; - Tjark Weber for Institut fur Informatik, 
+								;   Technische Universitat Munchin
+    (print "Coming soon...")
+    )
 
 ;; Solve Strategies
 
