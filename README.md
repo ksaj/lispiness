@@ -53,6 +53,8 @@ Most concerning is that this is pretty much on par with most of the other "tutor
 
 June 30, 2018: I finally found a resource worth learning from. [Practical Common Lisp](http://gigamonkeys.com/book/index.html). Still am going to post snippets that contain common gotchas. Then I'll add the appropriate methods.
 
+Sept 13, 2018: I'm not a gamer or a game developer, but I learned quite a lot from this article: https://all-things-andy-gavin.com/2011/03/12/making-crash-bandicoot-gool-part-9/. This also gives lots of arguments of why C and C++ aren't always up to the job. I really like how easy his GOOL is to read.
+
 # The Filez
 
 ## [1.lisp](https://github.com/ksaj/clisp/blob/master/1.lisp)
