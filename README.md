@@ -54,19 +54,3 @@ Most concerning is that this is pretty much on par with most of the other "tutor
 June 30, 2018: I finally found a resource worth learning from. [Practical Common Lisp](http://gigamonkeys.com/book/index.html). Still am going to post snippets that contain common gotchas. Then I'll add the appropriate methods.
 
 Sept 13, 2018: I'm not a gamer or a game developer, but I learned quite a lot from this article: https://all-things-andy-gavin.com/2011/03/12/making-crash-bandicoot-gool-part-9/. This also gives lots of arguments of why C and C++ aren't always up to the job. I really like how easy his GOOL is to read.
-
-# The Filez
-
-## [1.lisp](https://github.com/ksaj/clisp/blob/master/1.lisp)
-Asks your name, then gives a friendly hello. Documents a bizarrely wide-spread Lisp coding flaw that can really mess up your day. I'll revisit this issue later, since my usual fix is probably superceded by something way more slick these days. Here you can see an example of how to exploit it in 90% of the tutorials out there (mainly because they are all passively reworded copies).
-
-## [formatnil.md](https://github.com/ksaj/clisp/blob/master/formatnil.md)
-Ever thought about (format nil "string")? I did, and had a lisp epiphany. Lispiphany? EDIT July 2, 2018 - I just discovered my initial thoughts were probably right, and some of the tutorials lead you astray on this subject. I'll be looking into this specifically, and updating it with the facts.
-
-## [equal-or-thereabouts.lisp](https://github.com/ksaj/clisp/blob/master/equal-or-thereabouts.lisp)
-All things being greater than or equal. Fun with (in)equality. *Coming soon*. 
-
-## [ksaj-sudoku.lisp](https://github.com/ksaj/clisp/blob/master/ksaj-sudoku.lisp)
-Soon-to-be parallel Sudoku Solver. Using different methods than everyone else so I can't cheat.
-
-
