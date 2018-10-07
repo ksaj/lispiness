@@ -28,7 +28,7 @@ But Assembler programmers are all about efficient binary compiles, and this code
 
 Notice how we just cut the binary size in half (2 bytes for the MOV and SUB operators, but only 1 byte for the DEC), we didn't even touch the BX register. In a more sophisticated routine, the BX would be free for other uses.
 
-> What would Lisp do?
+## What would Lisp do?
 
 We've all remember Annie proudly singing *Anything you can do, Lisp can do better..." And, yes it can. In fact, if you were to leave the Lisp code as we started, with the **(- 4 1)** someone will eventually point out that it isn't very Lispy. Instead, you can *decrement* the 4 instead of verbosely subtracting 1 from it.
 
@@ -36,11 +36,11 @@ We've all remember Annie proudly singing *Anything you can do, Lisp can do bette
     (format nil "~d" (1- 4))
 ```
 
-Now, let me point out a little gotcha here. With the opposite function **1+**, you could almost get away with referring to it as "One Plus" instead of "increment." We can read the earlier example as "Subtract from 4 the 1" but you really have to remember that the **1-** is *decrement* and not "One minus," since one minus four isn't at all what we are doing. We are *decrementing* 4, versus subtracting it from 1.
+Now, let me point out a little gotcha here. With the opposite function **1+**, you could almost get away with referring to it as "One Plus" instead of "increment." We can read the earlier example as "Subtract from 4 the 1" but you really have to remember that the **1-** is *decrement* and not "One Minus," since *one minus four* isn't at all representative of what we are trying to do. We are *decrementing 4*, and not subtracting it from 1.
 
 ```lisp
     (format nil "~d" (- 4 1))
     (format nil "~d" (1- 4))
 ```
 
-Notice how these both produce the same result, but they do it in entirely different ways. And now you know why Lisp uses the terms "increment" and "decrement" and not their visual representations "one plus" and "one minus".
+Notice how these both produce the same result, but they do it in entirely different ways. And now you know why Lisp uses the terms "increment" and "decrement" instead of their visual representations "one plus" and "one minus". It only looks backward when you read it wrong, and don't consider how each is evaluated or compiled.
