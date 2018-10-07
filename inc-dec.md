@@ -36,11 +36,13 @@ We've all remember Annie proudly singing *Anything you can do, Lisp can do bette
     (format nil "~d" (1- 4))
 ```
 
-Now, let me point out a little gotcha here. With the opposite function **1+**, you could almost get away with referring to it as "One Plus" instead of "increment." We can read the earlier example as "Subtract from 4 the 1" but you really have to remember that the **1-** is *decrement* and not "One Minus," since *one minus four* isn't at all representative of what we are trying to do. We are *decrementing 4*, and not subtracting it from 1.
+Now, let me point out a little gotcha here. With the opposite function **1+**, you could almost get away with referring to it as "One Plus" instead of "Increment" But I strongly advise against adopting sloppy and confusing newbie habits. While we can read the earlier example as "Subtract from 4 the 1", you really have to remember that the **1-** is *decrement* and not "One Minus," since *one minus four* isn't at all representative of what we are trying to do. We are *decrementing 4*, and not subtracting it from 1. 
+
+Likewise, you can prove to yourself that they aren't the same by considering what you get by subtracting -4 from 1 versus decrementing -4. Wildly different results. So get into the habit of calling these functions by name, and not by appearance.
 
 ```lisp
     (format nil "~d" (- 4 1))
     (format nil "~d" (1- 4))
 ```
 
-Notice how these both produce the same result, but they do it in entirely different ways. And now you know why Lisp uses the terms "increment" and "decrement" instead of their visual representations "one plus" and "one minus". It only looks backward when you read it wrong, and don't consider how each is evaluated or compiled.
+These both produce similar results, but they do it in entirely different ways, and have different implications. And now you know why Lisp uses the terms "increment" and "decrement" instead of their visual representations "one plus" and "one minus". It only looks backward when you read it wrong, and don't consider how each is evaluated or compiled.
