@@ -20,3 +20,26 @@ eg:
 
 |#
 
+;;
+;; How NULL works as a function. I'll call it nullp to avoid clashing
+;; with the standard NULL, while still following proper lispy naming 
+;; conventions.
+;;
+(defun nullp (x)
+  "Really simple way to see why NULL is equiv to an empty list"
+  (eq x '()))
+;;
+;; [01]> (null `a)
+;; NIL
+;; [02]> (nullp `a)
+;; NIL
+;; [03]> (null `())
+;; T
+;; [04]> (nullp `())
+;; T
+;; [05]> (null nil)
+;; T
+;; [06]> (nullp nil)
+;; T
+;;
+
