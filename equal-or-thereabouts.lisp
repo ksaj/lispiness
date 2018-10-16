@@ -23,10 +23,10 @@ eg:
 ;;
 ;; How NULL works as a function. I'll call it nullp to avoid clashing
 ;; with the standard NULL, while still following proper lispy naming 
-;; conventions.
+;; conventions. This also inherently shows why () and NIL are the same.
 ;;
 (defun nullp (x)
-  "Really simple way to see why NULL is equiv to an empty list"
+  "Really simple way to see why NIL is equiv to an empty list"
   (eq x '()))
 ;;
 ;; [01]> (null `a)
