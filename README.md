@@ -53,7 +53,7 @@ Sept 13, 2018: I'm not a gamer or a game developer, but I learned quite a lot fr
 
 # CLFSWM
 
-Oct 21, 2018: I just installed the Common Lisp Full Screen Window Manager on a Raspberry Pi. It is more complicated than other GUIs, but I did manage to figure out quite a lot just by menu surfing. Sometimes I end up locking myself onto a particular full-screen frame, but eventually I'll figure out how to get out properly. I will say that once it is loaded, swithing between apps is blazingly fast.
+Oct 21, 2018: I just installed the Common Lisp Full Screen Window Manager on a Raspberry Pi. It is more complicated than other GUIs, but I did manage to figure out quite a lot just by menu surfing. Sometimes I end up locking myself onto a particular full-screen frame, but eventually I'll figure out how to get out properly. I will say that once it is loaded, switching between apps is blazingly fast. It is also very kind to the limited memory specs inherent to the RPis.
 
 Once I've obtained a little more skill using it, I'll write an article about why I wanted to install a Lisp desktop, and any of the particular pros and cons.
 
