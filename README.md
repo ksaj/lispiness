@@ -8,10 +8,6 @@ I interchange all the terms in the title, even if it pisses off certain overly-b
 
 This is all pure Common Lisp, and I simply use clisp on my Raspberry Pi. It will surely work under any OS that even remotely looks and smells like Linux, and should work with little to no modification under anything that looks and smells like LISP. Except when I post my GPIO stuff which is rather rpi-centric. But it'll all be very documented anyway. I've been using clisp on my Mac, too, so... no excuses mmkay?
 
-Everything is executed as a script. For example:  clisp 1.lisp
-
-But read the code first. That's the whole idea.
-
 > Once you get over the ugly parts, you can get actual work done -- even with Common Lisp.
 
 I'll add stuff here that I think is good for learning the Lisp language, but not stuff that you find repeated everywhere else. That's just repetitive and boring. And repetative. I've scanned a LOT of the so-called tutorials out there, and moved on because it is clear you could fully understand the content, yet be utterly inept at writing something useful that works - the antithesis to what Lisp has to offer.
@@ -54,3 +50,10 @@ Most concerning is that this is pretty much on par with most of the other "tutor
 June 30, 2018: I finally found a resource worth learning from. [Practical Common Lisp](http://gigamonkeys.com/book/index.html). Still am going to post snippets that contain common gotchas. Then I'll add the appropriate methods.
 
 Sept 13, 2018: I'm not a gamer or a game developer, but I learned quite a lot from this article: https://all-things-andy-gavin.com/2011/03/12/making-crash-bandicoot-gool-part-9/. This also gives lots of arguments of why C and C++ aren't always up to the job. I really like how easy his GOOL is to read.
+
+# CLFSWM
+
+Oct 21, 2018: I just installed the Common Lisp Full Screen Window Manager on a Raspberry Pi. It is more complicated than other GUIs, but I did manage to figure out quite a lot just by menu surfing. Sometimes I end up locking myself onto a particular full-screen frame, but eventually I'll figure out how to get out properly. I will say that once it is loaded, swithing between apps is blazingly fast.
+
+Once I've obtained a little more skill using it, I'll write an article about why I wanted to install a Lisp desktop, and any of the particular pros and cons.
+
