@@ -10,7 +10,7 @@ This is all pure Common Lisp, and I simply use clisp on my Raspberry Pi. It will
 
 I'll add stuff here that I think is good for learning the Lisp language, but not stuff that you find repeated everywhere else. That's just repetitive and boring. And repetative. I've scanned a LOT of the so-called tutorials out there, and moved on because it is clear you could fully understand the content, yet be utterly inept at writing something useful that works - the antithesis to what Lisp has to offer.
 
-Don't expect anything practical here. It's just a few of the non-intuitive things I find, but seem to be missing from the tutorials and courses out there. Some of it is probably dead wrong. But that is part of learning, and of course I'll update and explain the bits I got wrong, too.
+Don't expect anything practical here. It's just a few of the non-intuitive things I find, but seem to be missing from the tutorials and courses out there. Some of it is probably dead wrong. But that is part of learning, and of course I'll update and explain the bits I got wrong, too. Feel free to point out the errors in my ways.
 
 # Crappy Resources
 
