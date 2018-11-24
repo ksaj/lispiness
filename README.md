@@ -39,7 +39,7 @@ The author literally forgot the segment is about how parens are used, producing 
     
 Likewise, the author teaches that Lisp source files and compiled Lisp are the same thing. I didn't manage to read enough of his drivel to see what he thinks about the compile and compile-file functions. It would be easy to go on and on with examples showing how utterly inane the Tutorials Point Lisp tutorial is - is **NILL** *really* a data type? - but you probably already have heard enough to avoid the site entirely.
 
-Really, if you can't even get these simple examples (as well as English punctuation and basic sentence structure) right, you should *NOT* be writing tutorials. Besides, there already are a million similarly poor (and occasionally good) tutorials freely available online. If lisp is such a great language, why is 90% of the code out there derivative, or just plain terrible? If you are going to evangelize, try not to make it look so clumsy and ineffective. This "tutorial" adds nothing but maybe a little confusion to the world.
+Really, if you can't even get these simple examples (as well as English punctuation and basic sentence structure) right, you should *NOT* be writing tutorials. Besides, there already are a million similarly poor (and thankfully an occasional good one) tutorials freely available online. If lisp is such a great language, why is 90% of the code out there derivative, or just plain terrible? If you are going to evangelize, try not to make it look so clumsy and ineffective. This "tutorial" adds nothing but maybe a little confusion to the world.
 
 Most concerning is that this is pretty much on par with most of the other "tutorials" I've found. Lisp will always be the underdog when the supposed mentors produce such shite.
 
