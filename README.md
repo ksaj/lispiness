@@ -24,11 +24,11 @@ What makes that an example of misleading amateurish crap? It appears to new Lisp
 There are a lot of ways to do this. But to avoid ugly inhuman /5 answers, you could just as easily do this:
     
 ```lisp
-    (format t "~1$" (* (- 60 32) (/ 5 9)))  ; fahrenheit->celsius
-    (format t "~1$" (+ (* (/ 9 5) 60) 32))  ; celsius->fahrenheit
+    (format t "~1$" (* (- 60 32) .55))  ; fahrenheit->celsius
+    (format t "~1$" (+ (* 60 1.8) 32))  ; celsius->fahrenheit
 ```
 
-This is certainly much cleaner' and doesn't spit out top-heavy fractions.
+This is certainly much cleaner, and doesn't spit out top-heavy fractions. For the life of me I don't know how people think (/ 5 9) and (/ 9 5) are easier to remember and keep in order than simple .55 and 1.8.
 
 On another page, the author says:
 
