@@ -28,7 +28,7 @@ There are a lot of ways to do this. But to avoid ugly inhuman /5 answers, you co
     (format t "~1$" (+ (* 60 1.8) 32))  ; celsius->fahrenheit
 ```
 
-This is certainly much cleaner, and doesn't spit out top-heavy fractions. For the life of me I don't know how people think (/ 5 9) and (/ 9 5) are easier to remember and keep in order than simple .55 and 1.8.
+This is certainly much cleaner, and doesn't spit out top-heavy fractions. For the life of me I don't know how people think (/ 5 9) and (/ 9 5) are easier to remember and keep in order than simple .55 and 1.8. But even if you program in the divisions, the ~1$ keeps it to a single decimal place.
 
 On another page, the author says:
 
