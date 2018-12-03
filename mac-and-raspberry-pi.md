@@ -23,6 +23,7 @@ And the same commands run on the Mac:
 "X86_64"
 [3]> (machine-version)
 "X86_64"
+[4]>
 ```
 
 So, for now I don't know if some systems would report different information for **machine-type** and **machine-version**, but I assume there must be some that do.
