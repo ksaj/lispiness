@@ -24,7 +24,7 @@ And the same commands run on the Mac:
 
 ```lisp
 [1]> (machine-instance)
-"penetrationtest.corp"
+"ksaj-desktop.local"
 [2]> (machine-type)
 "X86_64"
 [3]> (machine-version)
