@@ -17,6 +17,13 @@ Here are the **machine-\*** functions for the Raspberry Pi:
 And the same commands run on the Mac:
 
 ```lisp
-
+[1]> (machine-instance)
+"penetrationtest.corp"
+[2]> (machine-type)
+"X86_64"
+[3]> (machine-version)
+"X86_64"
 ```
+
+So, for now I don't know if some systems would report different information for **machine-type** and **machine-version**, but I assume there must be some that do.
 
