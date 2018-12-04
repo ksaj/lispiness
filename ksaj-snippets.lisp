@@ -20,6 +20,7 @@
 
 (format t "Area of circle with radius of 10 is ~d.~%" (circle-area 10))
 
+
 (defun factorial (num)
        "Calculates factorial of a number"
        (cond ((zerop num) 1)
@@ -68,14 +69,15 @@
 
 (dec-hex 123 2)
 
+
 (defun dec-bin (value &optional (size 8))
   "Convert a decomal value to binary. Number of bits optional."
   (format t "~v,'0B" size value))
 
 (dec-bin 123)
 
-;; Strings and things
 
+;; Strings and things
 
 (defun split (string &optional (split-character #\Space))
   "Splits a string into a list of its elements."
@@ -91,6 +93,8 @@
 
 (split "A bunch of things.")
 ;-> ("A" "bunch" "of" "things.")
+(split "A_bunch_of_things." #\_)
+;->("A" "bunch" "of" "things.")
 
 
 (defun kudos ()
@@ -128,6 +132,7 @@
 
 (random-from-list '(one two three))
 
+
 ; Applying AND to a list. AND is a macro, so it can't be applied to a list.
 ; However, either (every #'identity list) or (notany #'null list) will accomplish
 ; the same thing, returnung T if no items are NIL. Will probably need this in my
@@ -157,6 +162,7 @@
     (format nil "~1$" (* (- temp 32) .55)))
 
 (fahrenheit->celsius 60)
+
 
 (defun celsius->fahrenheit (temp)
   "Convert a number in Fahrenheit to Celsius"
