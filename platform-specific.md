@@ -260,5 +260,7 @@ Bytes available until next GC:          455,668
 [4]> 
 ```
 
-You can see a strange little glitch (bug) resulting in the one row being shifted 2 spaces to the right in the **(room t)** output. It actually looks like that in my terminal. I doubt it would affect parsing, but it probably shouldn't do that either way.
+You can see a strange little glitch (bug) resulting in the one row being shifted 2 spaces to the right in the **(room t)** output. It actually looks like that in my terminal. I doubt it would affect parsing, but it probably shouldn't do that either way. 
+
+As well, there sure are a lot of layout and spacing inconsistencies. Although I think the width difference is due to different widths of the respective terminals, I don't know why some of the results begin with a blank line and others don't.
 
