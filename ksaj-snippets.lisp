@@ -81,15 +81,12 @@
 
 (defun split (string &optional (split-character #\Space))
   "Splits a string into a list of its elements."
-  (let ((result '())
-        (stream (make-string-output-stream)))
-   (loop for char across string
-         if (char= char split-character)
-         do (push (get-output-stream-string stream) result)
-         else
-         do (write-char char stream))
-   (push (get-output-stream-string stream) result)
-   (nreverse result)))
+  (let ((pos (position split-character string)))
+    (if (null pos)
+        (list string)
+        (cons (subseq string 0 pos)
+              (split (subseq string (1+ pos))
+                       split-character)))))
 
 (split "A bunch of things.")
 ;-> ("A" "bunch" "of" "things.")
