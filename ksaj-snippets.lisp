@@ -79,6 +79,7 @@
 
 ;; Strings and things
 
+; https://www.cliki.net/SPLIT-SEQUENCE TODO: split-if and split-if-not
 (defun split (string &optional (split-character #\Space))
   "Splits a string into a list of its elements."
   (let ((pos (position split-character string)))
