@@ -2,15 +2,15 @@
 
 > whatever it is you're doing would be done better in LispLanguage. Why? Don't ask, they can't explain it to the rest of us. 
 
-I'm re-learning clisp after being away from it since the early 90's. If you know what alife or strange attractors are, you'll instictively know why I was surrounded by robots, NiTi muscle wires, random electronic ittybits, and LISP! To add something to the community, I'll be pointing out a lot of Lisp programming gotcha's... especially where security is involved. Eventually this will culminate in a couple of projects I have in mind that are very LISPy in nature. Including one I started back then, but seemingly only now is of technical interest.
+I'm re-learning Common Lisp after being away from it since the early 90's. If you know what alife or strange attractors are, you'll instictively know why I was surrounded by robots, NiTi muscle wires, random electronic ittybits, and LISP! To add something back to the community, I'll be pointing out a lot of Lisp programming snippets... Eventually this will culminate in a couple of projects I have in mind that are very LISPy in nature. Including one I started way back when, but seemingly only now is of technical interest. (For now, that's *MY* secret)
 
-This is all pure Common Lisp, and I simply use clisp on my Raspberry Pi. It will surely work under any OS that even remotely looks and smells like Linux, and should work with little to no modification under anything that looks and smells like LISP. Except when I post my GPIO stuff which is rather rpi-centric. But it'll all be very documented anyway. I've been using clisp on my Mac, too, so... no excuses mmkay?
+This is all pure Common Lisp, and I simply use clisp on my Raspberry Pi. Everything I post here will surely work under any OS that even remotely looks and smells like Linux, and should work with little to no modification under anything that looks and smells like LISP. Except when I post my GPIO stuff which is rather rpi-centric. But it'll all be very documented anyway. I've been using clisp on my Mac, too, so... no excuses mmkay?
 
 > Once you get over the ugly parts, you can get actual work done -- even with Common Lisp.
 
 I'll add stuff here that I think is good for learning the Lisp language, but not stuff that you find repeated everywhere else. That's just repetitive and boring. And repetative. I've scanned a LOT of the so-called tutorials out there, and moved on because it is clear you could fully understand the content, yet be utterly inept at writing something useful that works - the antithesis to what Lisp has to offer.
 
-Don't expect anything practical here. It's just a few of the non-intuitive things I find, but seem to be missing from the tutorials and courses out there. Some of it is probably dead wrong. But that is part of learning, and of course I'll update and explain the bits I got wrong, too. Feel free to point out the errors in my ways.
+Don't expect anything overtly practical here. Some of it is probably dead wrong. But that is part of learning, and of course I'll update and explain the bits I got wrong, too. Feel free to point out the errors in my ways.
 
 # Crappy Resources
 
@@ -21,7 +21,7 @@ I shouldn't poopoo on other people's efforts without concrete examples. One of t
 ```
 What makes that an example of misleading amateurish crap? It appears to new Lispers that it works until you try to convert less convenient temperatures like 61 degrees. The answer is a rather stupid looking 709/5. This is NOT "code for converting Fahrenheit temp of 60o F to the centigrade scale" no matter how you slice it. If they were aiming for simplicity, they should use a simpler example. Teaching bad code right at the start only leads to equally bad programmers. The author spent far too much time finding a number to convert that would produce clean output. No human thinks of temperature in terms of its divisibility by 5, so why use it as your example?
 
-There are a lot of ways to do this. But to avoid ugly inhuman /5 answers, you could just as easily do this:
+There are a lot of ways to do this. But to avoid ugly inhuman fractional temperature readings, you could just as easily do this:
     
 ```lisp
     (format t "~1$" (* (- 60 32) .55))  ; fahrenheit->celsius
@@ -46,7 +46,7 @@ Most concerning is that this is pretty much on par with most of the other "tutor
 
 # Best resource Evah!
 
-June 30, 2018: I finally found a resource worth learning from. [Practical Common Lisp](http://gigamonkeys.com/book/index.html). Still am going to post snippets that contain common gotchas. Then I'll add the appropriate methods.
+June 30, 2018: I finally found a resource worth learning from. [Practical Common Lisp](http://gigamonkeys.com/book/index.html). This book is the bee's knees. Drop everything and read it. I've decided I need a hard copy of this on my book shelf because I reference it so often.
 
 Sept 13, 2018: I'm not a gamer or a game developer, but I learned quite a lot from this article: https://all-things-andy-gavin.com/2011/03/12/making-crash-bandicoot-gool-part-9/. This also gives lots of arguments of why C and C++ aren't always up to the job. I really like how easy his GOOL is to read.
 
