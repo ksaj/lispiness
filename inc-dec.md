@@ -1,4 +1,5 @@
-# Incrementing and Decrementing Numbers
+# Incrementing and Decrementing Numbers In Lisp
+#### (c)2018 Karsten Johansson
 
 Sometimes it is easy to forget that sometimes things *look* backward in Lisp, and sometimes they don't. Because of this, it is important to read Lisp using proper terminology.
 
