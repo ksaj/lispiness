@@ -3,7 +3,7 @@
 ;;;;
 
 
-;; Why is this a thing? What is its purpose?
+;; Why is this a thing? What is its purpose above just issuing a '(c)?
 (defun copy-cons (c)
   (cons (car c) (cdr c)))
 
