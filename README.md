@@ -56,3 +56,4 @@ Oct 21, 2018: I just installed the Common Lisp Full Screen Window Manager on a R
 
 Once I've obtained a little more skill using it, I'll write an article about why I wanted to install a Lisp desktop, and any of the particular pros and cons.
 
+Another soon to be added properly: http://art2.ph-freiburg.de/Lisp-Course
