@@ -12,7 +12,18 @@
             (/ (apply #'+ nums) (length nums))))
 
 (average 19 23 26 47)
-         
+
+
+; I'm kinda surprised this isn't part of the ANSI standard
+; Also, add check for input, and also just return value if
+; only 1 arg given. Consider allowing (% 3 50 50) to output
+; something like "1.5 1.5"
+(defun % (x y)
+       "Calculate x% of y"
+(float (* x (/ y 100))))
+
+(% 3 50)
+
 
 (defun circle-area (rad)
        "Calculates the area of a circle"
