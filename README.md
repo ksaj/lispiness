@@ -4,7 +4,7 @@
 
 I'm re-learning Common Lisp after being away from it since the early 90's. If you know what alife or strange attractors are, you'll instictively know why I was surrounded by robots, NiTi muscle wires, random electronic ittybits, and LISP! 
 
-I actually got my "introduction" to Lisp through using Cakewalk to write/record music. Here's a manual describing [Cakewalk Application Language](http://members.ziggo.nl/t.valkenburgh/Cakewalk%20Application%20Language%20Programming%20Guide.pdf). Once I got into Artificial Life, I instantly saw the Lisp connection and started doing all kinds of non-musical things in Cakewalk. The rest is history.
+I actually got my "introduction" to Lisp through using Cakewalk to write/record music. Here's a manual describing [Cakewalk Application Language](http://members.ziggo.nl/t.valkenburgh/Cakewalk%20Application%20Language%20Programming%20Guide.pdf). These days, I find CAL to be archaic, and am no fan of a lot of syntax choices - many of which strangely make their ugly appearance in the ARC Lisp dialect. Once I got into Artificial Life in the earliest part of the 90's, I instantly saw the Lisp connection and started doing all kinds of non-musical things in Cakewalk. The rest is history.
 
 To add something back to the community, I'll be pointing out a lot of Lisp programming snippets... Eventually this will culminate in a couple of projects I have in mind that are very LISPy in nature. Including one I started way back when, but seemingly only now is of technical interest. (For now, that's *MY* secret)
 
