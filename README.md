@@ -2,7 +2,11 @@
 
 > whatever it is you're doing would be done better in LispLanguage. Why? Don't ask, they can't explain it to the rest of us. 
 
-I'm re-learning Common Lisp after being away from it since the early 90's. If you know what alife or strange attractors are, you'll instictively know why I was surrounded by robots, NiTi muscle wires, random electronic ittybits, and LISP! To add something back to the community, I'll be pointing out a lot of Lisp programming snippets... Eventually this will culminate in a couple of projects I have in mind that are very LISPy in nature. Including one I started way back when, but seemingly only now is of technical interest. (For now, that's *MY* secret)
+I'm re-learning Common Lisp after being away from it since the early 90's. If you know what alife or strange attractors are, you'll instictively know why I was surrounded by robots, NiTi muscle wires, random electronic ittybits, and LISP! 
+
+I actually got my "introduction" to Lisp through using Cakewalk to write/record music. Here's a manual describing [Cakewalk Application Language](http://members.ziggo.nl/t.valkenburgh/Cakewalk%20Application%20Language%20Programming%20Guide.pdf). Once I got into Artificial Life, I instantly saw the Lisp connection and started doing all kinds of non-musical things in Cakewalk. The rest is history.
+
+To add something back to the community, I'll be pointing out a lot of Lisp programming snippets... Eventually this will culminate in a couple of projects I have in mind that are very LISPy in nature. Including one I started way back when, but seemingly only now is of technical interest. (For now, that's *MY* secret)
 
 This is all pure Common Lisp, and I simply use clisp on my Raspberry Pi. Everything I post here will surely work under any OS that even remotely looks and smells like Linux, and should work with little to no modification under anything that looks and smells like LISP. Except when I post my GPIO stuff which is rather rpi-centric. But it'll all be very documented anyway. I've been using clisp on my Mac, too, so... no excuses mmkay?
 
