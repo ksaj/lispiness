@@ -46,4 +46,4 @@ Likewise, you can prove to yourself that they aren't the same by considering wha
     (format nil "~d" (1- -4))   ; ==> -5
 ```
 
-These both produce similar results, but they do it in entirely different ways, and have different implications. And now you know why Lisp uses the terms "increment" and "decrement" instead of their visual representations "one plus" and "one minus". It only looks backward when you read it wrong, and don't consider how each is evaluated or compiled.
+"Minus one" and "Decrement by one" sometimes produce similar results, but they do it in entirely different ways, and have different implications. And now you know why Lisp uses the terms "increment" and "decrement" instead of their visual representations "one plus" and "one minus". It only looks backward when you read it wrong, and don't consider how each is evaluated or compiled.
