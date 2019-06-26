@@ -194,4 +194,12 @@
 
 (rock-paper-scissors 'rock 'paper)
 
+(defun uname-a ()
+       "Similar to Unix uname -a"
+       (long-site-name))
+
+(defun hostname ()
+       "Similar to Unix hostname command"
+       (short-site-name))
+
 
