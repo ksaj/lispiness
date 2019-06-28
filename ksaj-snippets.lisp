@@ -175,7 +175,7 @@
 
 (defun celsius->fahrenheit (temp)
   "Convert a number in Fahrenheit to Celsius"
-  (format nil "~1$" (+ (* 60 1.8) 32)))
+  (format nil "~1$" (+ (* temp 1.8) 32)))
 
 (celsius->fahrenheit 60)
 
