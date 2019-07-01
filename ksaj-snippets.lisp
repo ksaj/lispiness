@@ -18,12 +18,13 @@
 ; Also, add check for input, and also just return value if
 ; only 1 arg given. Consider allowing (% 3 50 50) to output
 ; something like "1.5 1.5"
-(defun % (x y)
+(defun %of (x y)
        "Calculate x% of y"
 (float (* x (/ y 100))))
 
-(% 3 50)
+(%of 3 50)
 
+; consider %off as well
 
 (defun circle-area (rad)
        "Calculates the area of a circle"
