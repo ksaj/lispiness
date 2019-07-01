@@ -75,18 +75,18 @@
 # obviousoy gets slower and slower as the max number rises. 10000000 starts to challenge raspberry pi memory (but not cpu, so this could be improved on...)
 
 
-(defun dec-hex (value &optional (size 4))
+(defun dec->hex (value &optional (size 4))
   "Convert a decimal value to hexadecimal. Number of hex bytes optional."
   (format t "~v,'0X" size value))
 
-(dec-hex 123 2)
+(dec->hex 123 2)
 
 
-(defun dec-bin (value &optional (size 8))
+(defun dec->bin (value &optional (size 8))
   "Convert a decomal value to binary. Number of bits optional."
   (format t "~v,'0B" size value))
 
-(dec-bin 123)
+(dec->bin 123)
 
 
 ;; Strings and things
@@ -157,14 +157,14 @@
 (nop this is a comment string)
 
 
-(defun leap-year-p (year)
+(defun leapyear-p (year)
     "Check if input is a leap year"
     (cond ((zerop (rem year 400)))
           ((zerop (rem year 100)) nil)
           ((zerop (rem year 4)))
           (t nil)))
 
-(leap-year-p 1984)
+(leapyear-p 1984)
 
 
 (defun fahrenheit->celsius (temp)
