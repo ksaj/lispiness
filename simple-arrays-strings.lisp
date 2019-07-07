@@ -7,9 +7,15 @@
 (aref "0123456789" 5)  ; access a vector element
 ; => #\5
 
-; But oddly, it isn't a SIMPLE vector:
+(describe '"0123456789")  ; with or without the '
+; => "0123456789" is a simple 1 dimensional array 
+; (vector) of CHARACTERs, of size
+; 10 (a ISO-8859-1 string).
 
-(svref "0123456789" 5)
+; You heard it from the horse's mouth. BUT,
+; svref says it *isn't* a simple vector:
+
+(svref "0123456789" 5) ; with or without the '
 ; *** - SVREF: "0123456789" is not a SIMPLE-VECTOR
 ; The following restarts are available:
 ; ABORT          :R1      Abort main loop
