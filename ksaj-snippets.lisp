@@ -22,19 +22,26 @@
        "Calculate x% of y"
        (float (* x (/ y 100))))
 
-(%of 3 50)
+(%of 3 50)  ; => 1.5
 
+(defun %off (amt pct)
+       "Calculate the percent off an amount. Requires %of)
+       (- amt (%of amt pct)))
+       
+(%off 90 10)  ; => 81.0
+       
 (defun percent (score outof)
        "Calculates percent from a fraction"
        (* (/ score outof) 100.00))
 
-; consider %off as well
+(percent 13 17)  ; => 76.47059       
 
 (defun circle-area (rad)
        "Calculates the area of a circle"
         (* pi rad rad))
 
 (format t "Area of circle with radius of 10 is ~d.~%" (circle-area 10))
+       ; => Area of circle with radius of 10 is 314.15926535897932384L0.
 
 
 (defun factorial (num)
