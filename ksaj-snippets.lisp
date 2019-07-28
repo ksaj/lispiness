@@ -20,9 +20,13 @@
 ; something like "1.5 1.5"
 (defun %of (x y)
        "Calculate x% of y"
-(float (* x (/ y 100))))
+       (float (* x (/ y 100))))
 
 (%of 3 50)
+
+(defun percent (score outof)
+       "Calculates percent from a fraction"
+       (* (/ score outof) 100.00))
 
 ; consider %off as well
 
