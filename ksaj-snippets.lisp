@@ -43,17 +43,23 @@
 (format t "Area of circle with radius of 10 is ~d.~%" (circle-area 10))
        ; => Area of circle with radius of 10 is 314.15926535897932384L0.
 
-
+#|
 (defun factorial (num)
-       "Calculates factorial of a number"
+      "Calculates factorial of a number"
        (cond ((zerop num) 1)
              (t (* num (factorial (1- num))))))
 
 (format t "Factorial of 6 is ~d.~%" (factorial 6))
+|#
 
+(defun factorial (n &optional (acc 1))
+    "Calculates factorial of a number using tail recursion." 
+     (if (< n 2)
+        acc
+        (fact (  n 1) ( * acc n))))
 
 (defun mkrand (x y)
-        "Return random uniformly distributed number from range x to y"
+       "Return random uniformly distributed number from range x to y"
         (+ x (random  (1+ (- y x)))))
 
 (mkrand 4 24)
