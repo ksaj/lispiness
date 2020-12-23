@@ -20,38 +20,44 @@ different methods of exchanging values without an intermediate storage
 register. I've coded them in Common Lisp, even though it is pretty
 unlikely you'll ever see them used in the wild. Cos why not?
 
+Not all of these will immediately translate to assembler, since the setq
+is kinda built into the xor so that the answer is stuffed into the first
+register named. IE:  XOR AX, BX is akin to (setq ax (logxor ax bx)) and
+XOR BX, AX is akin to (setq bx (logxor bx ax)). The non-reversable ones
+would obfuscate the code, but not make it shorter or faster.
+
 |#
 
 (defun swap-psetq (ax bx)
  "Mimic XCHG AX,BX"
-  (psetq ax bx bx ax)
+  (psetq ax bx bx ax)        ; xchg ax, bx
   (list  ax bx))
 
 (defun swap-xor (ax bx)
  "Swap with three XORs"
-  (setq ax (logxor ax bx))
-  (setq bx (logxor ax bx))
-  (setq ax (logxor ax bx))
+  (setq ax (logxor ax bx))   ; xor ax, bx
+  (setq bx (logxor bx bx))   ; xor bx, ax
+  (setq ax (logxor ax bx))   ; xor ax, bx
   (list ax bx))
 
 (defun swap-add (ax bx)
  "Swap with ADD SUB SUB"
   (setq ax (+ ax bx))
-  (setq bx (- ax bx))
+  (setq bx (- ax bx))       ;
   (setq ax (- ax bx))
   (list ax bx))
 
 (defun swap-sub (ax bx)
  "Swap with SUB ADD SUB-and-tweak"
   (setq ax (- ax bx))
-  (setq bx (+ ax bx))
+  (setq bx (+ bx ax))
   (setq ax (- 0 (- ax bx))) ; See NOTE
   (list ax bx))
 
 (defun swap-mult (ax bx)
  "Swap with MUL DIV DIV"
   (setq ax (* ax bx))
-  (setq bx (/ ax bx))
+  (setq bx (/ ax bx))       ;
   (setq ax (/ ax bx))
   (list ax bx))
 
@@ -61,6 +67,13 @@ unlikely you'll ever see them used in the wild. Cos why not?
   (setq bx (* ax bx))
   (setq ax (* (numerator   (/ ax bx)) 
               (denominator (/ ax bx)))) ; See NOTE
+  (list ax bx))
+
+(defun swap-div2 (ax bx)
+ "Swap with DIV MUL DIV"
+  (setq ax (/ ax bx))
+  (setq bx (* bx ax))
+  (setq ax (/ bx ax))       ; 
   (list ax bx))
 
 ; NOTE We have two cases here where Lisp would lose the negative
