@@ -32,12 +32,10 @@ would obfuscate the code, but not make it shorter or faster.
  "More likely Lisp method"
   (list bx ax))
 
-
 (defun swap-psetq (ax bx)
  "Mimic XCHG AX,BX"
   (psetq ax bx bx ax)        ; xchg ax, bx
   (list  ax bx))
-
 
 (defun swap-xor (ax bx)
  "Swap with three XORs"
